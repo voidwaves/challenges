@@ -1,11 +1,11 @@
 import { sum } from './index'
 
 describe('sum', () => {
-  test('empty list yields 0', () => {
+  it('returns 0 given an empty list', () => {
     expect(sum([])).toStrictEqual(0)
   })
 
-  test('list to be summed up', () => {
+  it('returns the sum given a list of numbers', () => {
     expect(sum([1, 2, 3, -2])).toStrictEqual(4)
   })
 })
